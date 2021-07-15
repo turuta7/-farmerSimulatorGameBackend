@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
@@ -24,13 +24,13 @@ const Achievement = new Schema(
     forTheFirstHarvest: {
       type: Number,
       default: 0,
-    },  
+    },
     forTheFirst5VisitsToTheGame: {
       type: Number,
       default: 0,
-    },  
+    },
   },
-    { timestamps: true },
+  { timestamps: true }
 );
 
-export default mongoose.model('Achievement', Achievement);
+export default mongoose.model("Achievement", Achievement);
